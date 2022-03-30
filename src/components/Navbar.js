@@ -5,15 +5,14 @@ import Container from "react-bootstrap/Container";
 
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
+
 import {
   AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
+import { SiGooglescholar } from "react-icons/si";
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
@@ -82,26 +81,14 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Skills
-              </Nav.Link>
-            </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/project"
+                to="/education"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
+                <SiGooglescholar
                   style={{ marginBottom: "2px" }}
                 />{" "}
                 Education

@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
   AiOutlineTwitter,
-  
+
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -13,13 +13,11 @@ function Footer() {
   return (
     <Container fluid className="footer">
       <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Karishma Kumari</h3>
-        </Col>
-        <Col md="4" className="footer-copywright">
+
+        <Col md="6" className="footer-copywright">
           <h3>Copyright © {year} KK</h3>
         </Col>
-        <Col md="4" className="footer-body">
+        <Col md="6" className="footer-body">
           <ul className="footer-icons">
             <li className="social-icons">
               <a
